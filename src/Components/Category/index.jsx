@@ -16,7 +16,7 @@ const Category = () => {
                         {/*  */}
                         <div className="col-lg-3 " style={{height:'250px', width:'48%'}}>
                         <img src="sofa_dai.jpeg" alt="" style={{width:"100%", height:'250px', objectFit:'fill'}}/> 
-                        <p style={{height:'250px'}}>|</p>
+                        
                         </div>
                     </div>
                 </div>
