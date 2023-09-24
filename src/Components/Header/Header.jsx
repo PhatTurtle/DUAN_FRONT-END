@@ -8,7 +8,7 @@ const Header = () => {
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#"></a>
-          <img src="couch.png" alt="" />
+          <img src="Logo1.png" alt="" />
           <section className="mt-2" style={{ width: "40%", marginLeft: "40%" }}>
             <div className="input-group mb-2">
               <input style={{width:'60%'}} type="text"className="form-control" placeholder="Tìm Kiếm Đê Mấy Con Chó ......."aria-label="Recipient's username" aria-describedby="button-addon2" />
