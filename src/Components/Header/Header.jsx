@@ -7,9 +7,9 @@ const Header = () => {
     return (
 
 <section className=''>
-       <nav class="navbar navbar-dark bg-dark fixed-top">
+       <nav className="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
+    <a className="navbar-brand" href="#"></a>
        <img src="couch.png" alt="" />
     <section className='mt-2' style={{width:'40%', marginLeft:'40%'}}>
         <div class="input-group mb-2">
