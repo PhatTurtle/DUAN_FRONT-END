@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import React from "react";
 import * as Yup from "yup";
+import "./register.css";
 
 const Register = () => {
   const formik = useFormik({
@@ -9,8 +10,27 @@ const Register = () => {
       email: "",
       phone: "",
       password: "",
-      confirmPassword: "",
+      confimPassword: "",
     },
+    validationSchema: Yup.object({
+      username: Yup.string()
+        .min(3, "Your name must be at least 3 characters")
+        .max(20, "Your name must be under 20 characters")
+        .required("You must fill in this section!"),
+      email: Yup.string()
+        .email("Invalid Email")
+        .required("You must fill in this section!"),
+      phone: Yup.number()
+        .min(0, "Your phone must be at least 0 characters")
+        .max(10, "Your name must be under 10 characters")
+        .required("You must fill in this section!"),
+      password: Yup.string()
+        .min(8, "Your name must be at least 3 characters")
+        .required("You must fill in this section!"),
+      confimPassword: Yup.string()
+        .oneOf([Yup.ref("password"), "Password does not match"])
+        .required("You must fill in this section!"),
+    }),
   });
   return (
     <>
@@ -58,12 +78,12 @@ const Register = () => {
                   type="text"
                   name="email"
                   placeholder="Enter your Email"
-                  value={formik.values.username}
+                  value={formik.values.email}
                   onChange={formik.handleChange}
                   onBlur={formik.onBlur}
                 />
-                {formik.errors.username && formik.touched.username && (
-                  <p>{formik.errors.username}</p>
+                {formik.errors.email && formik.touched.email && (
+                  <p>{formik.errors.email}</p>
                 )}
                 <i class="fa-solid fa-envelope"></i>
               </div>
@@ -73,14 +93,14 @@ const Register = () => {
                   type="text"
                   name="phone"
                   placeholder="Enter your Phone"
-                  value={formik.values.username}
+                  value={formik.values.phone}
                   onChange={formik.handleChange}
                   onBlur={formik.onBlur}
                 />
-                {formik.errors.username && formik.touched.username && (
-                  <p>{formik.errors.username}</p>
+                {formik.errors.phone && formik.touched.phone && (
+                  <p>{formik.errors.phone}</p>
                 )}
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-phone"></i>
               </div>
               <div className="input">
                 <input
@@ -102,14 +122,15 @@ const Register = () => {
                   className="input-mail"
                   type="password"
                   name="confimPassword"
-                  value={formik.values.password}
+                  value={formik.values.confimPassword}
                   onChange={formik.handleChange}
                   onBlur={formik.onBlur}
                   placeholder="Enter your ConfimPassword"
                 />
-                {formik.errors.password && formik.touched.password && (
-                  <p>{formik.errors.password}</p>
-                )}
+                {formik.errors.confimPassword &&
+                  formik.touched.confimPassword && (
+                    <p>{formik.errors.confimPassword}</p>
+                  )}
                 <i class="fa-solid fa-lock"></i>
               </div>
 
