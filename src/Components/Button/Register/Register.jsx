@@ -17,7 +17,7 @@ const Register = () => {
             <h3>To Your Name Website</h3>
 
             <div className="icon">
-              <i class="fa-brands fa-square-instagram"></i>
+              <i className="fa-brands fa-square-instagram"></i>
               <i className="fa-brands fa-facebook"></i>
               <i className="fa-brands fa-twitter"></i>
               <i className="fa-brands fa-linkedin"></i>
@@ -47,12 +47,57 @@ const Register = () => {
               <div className="input">
                 <input
                   className="input-mail"
+                  type="text"
+                  name="email"
+                  placeholder="Enter your Email"
+                  value={formik.values.username}
+                  onChange={formik.handleChange}
+                  onBlur={formik.onBlur}
+                />
+                {formik.errors.username && formik.touched.username && (
+                  <p>{formik.errors.username}</p>
+                )}
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div className="input">
+                <input
+                  className="input-mail"
+                  type="text"
+                  name="phone"
+                  placeholder="Enter your Phone"
+                  value={formik.values.username}
+                  onChange={formik.handleChange}
+                  onBlur={formik.onBlur}
+                />
+                {formik.errors.username && formik.touched.username && (
+                  <p>{formik.errors.username}</p>
+                )}
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div className="input">
+                <input
+                  className="input-mail"
                   type="password"
                   name="password"
                   value={formik.values.password}
                   onChange={formik.handleChange}
                   onBlur={formik.onBlur}
                   placeholder="Enter your Password"
+                />
+                {formik.errors.password && formik.touched.password && (
+                  <p>{formik.errors.password}</p>
+                )}
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div className="input">
+                <input
+                  className="input-mail"
+                  type="password"
+                  name="confimPassword"
+                  value={formik.values.password}
+                  onChange={formik.handleChange}
+                  onBlur={formik.onBlur}
+                  placeholder="Enter your ConfimPassword"
                 />
                 {formik.errors.password && formik.touched.password && (
                   <p>{formik.errors.password}</p>
