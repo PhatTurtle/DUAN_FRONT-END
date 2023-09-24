@@ -3,7 +3,15 @@ import React from "react";
 import * as Yup from "yup";
 
 const Register = () => {
-  const formik = useFormik({});
+  const formik = useFormik({
+    initialValues: {
+      username: "",
+      email: "",
+      phone: "",
+      password: "",
+      confirmPassword: "",
+    },
+  });
   return (
     <>
       <div className="body">
@@ -104,16 +112,12 @@ const Register = () => {
                 )}
                 <i class="fa-solid fa-lock"></i>
               </div>
-              <div className="check">
-                <input type="checkbox" />
-                <label> Remember me </label>
-                <a href="#"> Forgot password </a>
-              </div>
+
               <div className="input">
-                <input type="submit" className="button" value=" Sign In" />
+                <input type="submit" className="button" value=" Sign Up" />
               </div>
               <div className="log">
-                <a href="#">Sign In here</a>
+                <a href="#">Sign Up here</a>
               </div>
             </form>
           </div>
