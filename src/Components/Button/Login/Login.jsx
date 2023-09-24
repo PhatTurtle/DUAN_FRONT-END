@@ -3,6 +3,7 @@ import "./login.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Register from "../Register/Register";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const formik = useFormik({
@@ -80,7 +81,7 @@ const Login = () => {
             </div>
             <div className="log">
               <p>Already have an account?</p>
-              <a href={<Register />}>Sign Up here</a>
+              <Link to="/register">Sign Up here</Link>
             </div>
           </form>
         </div>
