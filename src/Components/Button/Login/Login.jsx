@@ -25,7 +25,7 @@ const Login = () => {
             SOFA
           </a>
           <h2>Welcome</h2>
-          <h3>To our Name Website</h3>
+          <h3>Furniture E-Commerce</h3>
 
           <div className="icon">
             <i class="fa-brands fa-square-instagram"></i>

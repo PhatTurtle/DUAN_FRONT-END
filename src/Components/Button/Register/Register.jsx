@@ -42,7 +42,7 @@ const Register = () => {
               SOFA
             </a>
             <h2>Welcome</h2>
-            <h3>To Your Name Website</h3>
+            <h3>Furniture E-Commerce</h3>
 
             <div className="icon">
               <i className="fa-brands fa-square-instagram"></i>
