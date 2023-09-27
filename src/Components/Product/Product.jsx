@@ -5,7 +5,7 @@ const Product = () => {
     return (
         <>
         <div class="card border-light mb-3 hovers" style={{width: "260px"}}>
-            <img style={{scale:'.4'}} src="armchair.png" class="card-img-top" alt="..."/>
+            <img style={{scale:'.4'}} src="armchair.png" class="card-img-top img-pro" alt="..."/>
             <hr />
             <div class="card-body">
                 <h5 class="card-title">Phúc EX</h5>

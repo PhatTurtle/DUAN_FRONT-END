@@ -6,11 +6,9 @@
     
 }
 
-.hovers > img:hover{
-    scale: .9;
-}
 
-img:hover{
+
+.img-pro:hover{
     transform: scale(1.5) !important;
     transition: transform 330ms ease-in-out;
 }

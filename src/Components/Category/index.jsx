@@ -1,4 +1,4 @@
-import './style.module.css'
+
 
 const Category = () => {
     return (
@@ -31,13 +31,13 @@ const Category = () => {
         {/*  */}
         <section className='bg-dark my-3'>
             <section className="container">
-                <div className="row d-flex justify-content-between     ">
+                <div className="row d-flex justify-content-around ">
                         <img style={{width:'10%'}} src="armchair.png" alt="" />
                         <img style={{width:'10%'}} src="armchair.png" alt="" />
                         <img style={{width:'10%'}} src="armchair.png" alt="" />
                 </div>
                 {/*  */}
-                <div className='row d-flex justify-content-between text-white'>
+                <div className='d-flex justify-content-around text-white'>
                         <span>Mang lại cảm giác thư thái đến lạ</span>
                         <span>Mang lại cảm giác thư thái đến lạ</span>
                         <span>Mang lại cảm giác thư thái đến lạ</span>
