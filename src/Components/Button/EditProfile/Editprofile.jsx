@@ -6,7 +6,7 @@ const EditProfile = () => {
   return (
     <>
       <div className="body">
-        <div className="container rounded    mb-5 ">
+        <div className="container rounded  mb-5 ">
           <div className="row">
             <div className="col-md-3 border-right">
               <div className="d-flex flex-column align-items-center text-center p-3 py-5">
@@ -141,12 +141,13 @@ const EditProfile = () => {
                   </div>
                 </div>
                 <div className="mt-5 text-center">
-                  <button
+                  <Link
+                    to="/customer"
                     className="btn btn-primary profile-button"
                     type="button"
                   >
                     Save Profile
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

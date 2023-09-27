@@ -15,6 +15,9 @@ const Customer = () => {
                   className="rounded-top text-white d-flex flex-row"
                   style={{ backgroundColor: "#000", height: "200px" }}
                 >
+                  <Link to="/">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </Link>
                   <div
                     className="ms-4 mt-5 d-flex flex-column"
                     style={{ width: "150px" }}
