@@ -1,0 +1,49 @@
+/* Thêm đoạn mã CSS sau vào stylesheet của bạn */
+
+/* Media queries cho thiết bị có độ rộng màn hình nhỏ hơn hoặc bằng 768px (di động và iPad) */
+@media (max-width: 768px) {
+    .card {
+      width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+  
+    /* Điều chỉnh kích thước ảnh avatar */
+    .img-fluid.img-thumbnail {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Điều chỉnh khoảng cách giữa các phần tử */
+    .ms-4 {
+      margin-left: 0 !important;
+    }
+    .ms-3 {
+      margin-left: 0 !important;
+      margin-top: 10px;
+    }
+  
+    /* Điều chỉnh độ rộng của card */
+    .col.col-lg-9.col-xl-7 {
+      width: 100%;
+    }
+  }
+  
+  /* Media queries cho thiết bị có độ rộng màn hình nhỏ hơn hoặc bằng 576px (di động) */
+  @media (max-width: 576px) {
+    .mb-2 {
+      margin-bottom: 0.5rem !important;
+    }
+  
+    .p-4 {
+      padding: 1rem !important;
+    }
+  
+    .font-italic {
+      font-style: normal;
+    }
+  
+    /* Điều chỉnh khoảng cách giữa các số liệu thống kê */
+    .py-1 > div {
+      padding: 0.2rem;
+    }
+  }
+  
