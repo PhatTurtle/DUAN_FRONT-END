@@ -1,19 +1,21 @@
-/* .hovers:hover{
+.hovers:hover{
     border: 2px solid black !important;
+}
+.hovers:hover .none{
+    display: inline-block !important;
+    
 }
 
 .hovers > img:hover{
     scale: .9;
-} */
-
-
-
-.hovers {
-    &:hover + img {
-        transform: scale(1.5) !important;
-    }
 }
-img{
-    /* transform: scale(1.5) !important; */
+
+img:hover{
+    transform: scale(1.5) !important;
     transition: transform 330ms ease-in-out;
+}
+
+.none  {
+    display: none !important;
+    transition:  all 500ms ease-out !important;
 }
