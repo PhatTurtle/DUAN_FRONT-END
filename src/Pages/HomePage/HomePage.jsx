@@ -2,6 +2,8 @@ import { Route, Router, Routes } from "react-router-dom";
 import Category from "../../Components/Category";
 import Header from "../../Components/Header/Header";
 import Product from "../../Components/Product/Product";
+import Recommend from "../../Components/Recommend";
+
 
 const HomePage = () => {
 
@@ -15,6 +17,9 @@ const HomePage = () => {
             </div>
             <div>
                 <Product/>
+            </div>
+            <div>
+                <Recommend/>
             </div>
         </>
          
