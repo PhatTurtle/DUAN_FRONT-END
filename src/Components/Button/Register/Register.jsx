@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import React from "react";
 import * as Yup from "yup";
 import "./register.css";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const formik = useFormik({
@@ -138,7 +139,7 @@ const Register = () => {
                 <input type="submit" className="button" value=" Sign Up" />
               </div>
               <div className="log">
-                <a href="#">Sign Up here</a>
+                <Link to="/login">Sign In here</Link>
               </div>
             </form>
           </div>
