@@ -2,8 +2,8 @@
 
 const Category = () => {
     return (
-
-        <section className="container-fluid" style={{}}>
+        <>
+            <section className="container-fluid" style={{}}>
             <div className="row">
                 
                 <div className="col-lg-6">
@@ -27,6 +27,27 @@ const Category = () => {
                 </div>
             </div>
         </section>
+
+        {/*  */}
+
+        <section className="container-fluid bg-dark my-3">
+            <div className="row">
+
+                <div className="col-lg-4">
+                    <img src="armchair.png" alt="" />
+                </div>
+                {/*  */}
+                <div className="col-lg-4">
+                    <img src="armchair.png" alt="" />
+                </div>
+                {/*  */}
+                <div className="col-lg-4">
+                    <img src="armchair.png" alt="" />
+                </div>
+            </div>
+        </section>
+        </>
+        
 
     );
 }
