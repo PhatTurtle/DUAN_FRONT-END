@@ -1,5 +1,8 @@
-body {
+
+.body {
     background-image: url(../Login/pexels-simon-berger-1323550.jpg);
+
+   
 }
 
 .form-control:focus {
