@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -22,7 +22,7 @@ const Login = () => {
       <div className="back"></div>
       <div className="login">
         <div className="content">
-          <Link to="#" className="logo">
+          <Link to="/" className="logo">
             SOFA
           </Link>
           <h2>Welcome</h2>

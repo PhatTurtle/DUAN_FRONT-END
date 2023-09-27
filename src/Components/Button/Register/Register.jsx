@@ -39,9 +39,9 @@ const Register = () => {
         <div className="back"></div>
         <div className="login">
           <div className="content">
-            <a href="#" className="logo">
+            <Link to="/" className="logo">
               SOFA
-            </a>
+            </Link>
             <h2>Welcome</h2>
             <h3>Furniture E-Commerce</h3>
 

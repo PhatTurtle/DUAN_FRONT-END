@@ -3,7 +3,9 @@ import "./App.css";
 import Login from "./Components/Button/Login/Login";
 import Header from "./Components/Header/Header";
 import Register from "./Components/Button/Register/Register";
-import HomePage from "./Pages/HomePage/HomePage"
+import HomePage from "./Pages/HomePage/HomePage";
+import Customer from "./Components/Button/Customer/Customer";
+import EditProfile from "./Components/Button/EditProfile/Editprofile";
 function App() {
   return (
     <>
@@ -12,6 +14,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/customer" element={<Customer />} />
+          <Route path="/editProfile" element={<EditProfile />} />
         </Routes>
       </BrowserRouter>
     </>
