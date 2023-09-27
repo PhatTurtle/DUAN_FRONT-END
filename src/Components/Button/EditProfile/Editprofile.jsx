@@ -1,5 +1,6 @@
 import React from "react";
 import "./Editprofile.css";
+import { Link } from "react-router-dom";
 
 const EditProfile = () => {
   return (
@@ -140,12 +141,13 @@ const EditProfile = () => {
                   </div>
                 </div>
                 <div className="mt-5 text-center">
-                  <button
+                  <Link
+                    to="/customer"
                     className="btn btn-primary profile-button"
                     type="button"
                   >
                     Save Profile
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
