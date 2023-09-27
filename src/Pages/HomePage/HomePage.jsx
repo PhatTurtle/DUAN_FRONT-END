@@ -1,21 +1,22 @@
 import { Route, Router, Routes } from "react-router-dom";
 import Category from "../../Components/Category";
 import Header from "../../Components/Header/Header";
-
+import Product from "../../Components/Product/Product";
 
 const HomePage = () => {
 
     return (
-        <section className="">
-            <div className=" my-3" style={{height:'5rem'}}>
+        <>
+            <div className="py-5">
                 <Header/>
             </div>
-
-            <div className="my-2" style={{height:'250px'}}>
+            <div>
                 <Category/>
             </div>
-           
-        </section>
+            <div>
+                <Product/>
+            </div>
+        </>
          
     
         

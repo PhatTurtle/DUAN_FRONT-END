@@ -1,4 +1,4 @@
-
+import './style.module.css'
 
 const Category = () => {
     return (
@@ -29,23 +29,22 @@ const Category = () => {
         </section>
 
         {/*  */}
-
-        <section className="container-fluid bg-dark my-3">
-            <div className="row">
-
-                <div className="col-lg-4">
-                    <img src="armchair.png" alt="" />
+        <section className='bg-dark my-3'>
+            <section className="container">
+                <div className="row d-flex justify-content-between     ">
+                        <img style={{width:'10%'}} src="armchair.png" alt="" />
+                        <img style={{width:'10%'}} src="armchair.png" alt="" />
+                        <img style={{width:'10%'}} src="armchair.png" alt="" />
                 </div>
                 {/*  */}
-                <div className="col-lg-4">
-                    <img src="armchair.png" alt="" />
+                <div className='row d-flex justify-content-between text-white'>
+                        <span>Mang lại cảm giác thư thái đến lạ</span>
+                        <span>Mang lại cảm giác thư thái đến lạ</span>
+                        <span>Mang lại cảm giác thư thái đến lạ</span>
                 </div>
-                {/*  */}
-                <div className="col-lg-4">
-                    <img src="armchair.png" alt="" />
-                </div>
-            </div>
+            </section>
         </section>
+        
         </>
         
 
