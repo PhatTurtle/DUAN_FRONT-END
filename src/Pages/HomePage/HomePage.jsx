@@ -7,7 +7,7 @@ const HomePage = () => {
 
     return (
         <section className="">
-            <div className=" my-2" style={{height:'5rem'}}>
+            <div className=" my-3" style={{height:'5rem'}}>
                 <Header/>
             </div>
 
