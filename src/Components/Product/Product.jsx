@@ -6,12 +6,14 @@ import axios from "axios";
 const Product = () => {
      const [apiProduct, setapiProduct] = useState([])
      function handle (data){
+            console.log(data);
             setapiProduct(data)
     }
      useEffect(() =>{
           axios.get('https://dummyjson.com/products')
           .then((resp) =>{
-            handle(resp.data)
+            console.log(resp.data);
+            handle(resp.data.products)
           })
             
   
